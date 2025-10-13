@@ -1,0 +1,15 @@
+title: TeraContext.AI
+description: Advanced AI solutions for enterprise-scale context management.
+url: "https://teracontext.ai"
+baseurl: ""
+permalink: /:title/
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

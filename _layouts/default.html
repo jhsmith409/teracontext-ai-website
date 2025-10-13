@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | Joshua8.AI</title>
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% else %}
+  <meta name="description" content="Customized AI solutions for complete control - model tuning, context engineering, and tailored cloud/local services.">
+  {% endif %}
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="{{ page.title }} | Joshua8.AI">
+  {% if page.description %}
+  <meta property="og:description" content="{{ page.description }}">
+  {% else %}
+  <meta property="og:description" content="Customized AI solutions for complete control - model tuning, context engineering, and tailored cloud/local services.">
+  {% endif %}
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="Joshua8.AI">
+  <meta property="og:locale" content="en_US">
+  {% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% endif %}
+  {% if page.author %}
+  <meta property="article:author" content="{{ page.author }}">
+  {% endif %}
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }} | Joshua8.AI">
+  {% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}">
+  {% else %}
+  <meta name="twitter:description" content="Customized AI solutions for complete control - model tuning, context engineering, and tailored cloud/local services.">
+  {% endif %}
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <link rel="stylesheet" href="/css/styles.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Structured Data / Schema.org -->
+  {% include schema.html %}
+
+  <!-- Vercel Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+
+  <!-- Vercel Speed Insights -->
+  <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  {% include header.html %}
+  {% include breadcrumbs.html %}
+  <main id="main-content" role="main">
+    <div class="content-wrapper">
+      {{ content }}
+    </div>
+  </main>
+  {% include footer.html %}
+  <script src="/js/search.min.js"></script>
+
+  <style>
+    /* Content wrapper for all pages to ensure readable margins */
+    .content-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Special handling for hero sections and full-width sections */
+    .content-wrapper > .hero,
+    .content-wrapper > section.value-prop,
+    .content-wrapper > section.why-us,
+    .content-wrapper > section.services-teaser,
+    .content-wrapper > section.testimonials {
+      margin-left: -2rem;
+      margin-right: -2rem;
+      max-width: none;
+    }
+
+    /* Ensure headings, paragraphs, and tables have proper spacing */
+    .content-wrapper > h1,
+    .content-wrapper > h2,
+    .content-wrapper > h3 {
+      margin-bottom: 1rem;
+    }
+
+    .content-wrapper > p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    .content-wrapper > table {
+      margin: 2rem 0;
+    }
+
+    /* Blockquotes should be centered with max-width */
+    .content-wrapper > blockquote {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 768px) {
+      .content-wrapper {
+        padding: 1.5rem 1rem;
+      }
+
+      .content-wrapper > .hero,
+      .content-wrapper > section.value-prop,
+      .content-wrapper > section.why-us,
+      .content-wrapper > section.services-teaser,
+      .content-wrapper > section.testimonials {
+        margin-left: -1rem;
+        margin-right: -1rem;
+      }
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "name": "Joshua8.AI",
+      "url": "{{ site.url }}",
+      "logo": "{{ site.url }}/rockpilespear.jpg",
+      "description": "{{ site.description }}",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "McLean",
+        "addressRegion": "VA",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "38.9339",
+        "longitude": "-77.1773"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Virginia"
+        },
+        {
+          "@type": "Country",
+          "name": "United States"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/james-smith-035677a4/",
+        "https://x.com/jhsmith409"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "info@joshua8.ai",
+        "url": "{{ site.url }}/contact"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Jim Smith",
+        "jobTitle": "Managing Member",
+        "sameAs": [
+          "https://www.linkedin.com/in/james-smith-035677a4/",
+          "https://x.com/jhsmith409"
+        ]
+      },
+      "priceRange": "$$$$",
+      "openingHours": "Mo-Fr 09:00-17:00"
+    },
+    {
+      "@type": "WebSite",
+      "name": "Joshua8.AI",
+      "url": "{{ site.url }}",
+      "description": "{{ site.description }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Joshua8.AI"
+      }
+    }
+    {% if page.layout == 'post' %}
+    ,{
+      "@type": "BlogPosting",
+      "headline": "{{ page.title }}",
+      "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+      "author": {
+        "@type": "Person",
+        "name": "{% if page.author %}{{ page.author }}{% else %}Joshua8.AI{% endif %}"
+      },
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.date | date_to_xmlschema }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Joshua8.AI",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/assets/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+      }
+    }
+    {% endif %}
+    {% if page.title == 'Services' %}
+    ,{
+      "@type": "Service",
+      "name": "AI Consulting Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Joshua8.AI"
+      },
+      "serviceType": "AI Consulting",
+      "description": "Comprehensive AI solutions including strategic consulting, readiness assessments, custom models, and support.",
+      "areaServed": "Worldwide",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AI Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Strategic AI Consulting"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Readiness Assessment"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Ethics"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom AI Models & Processes"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Training & Support"
+            }
+          }
+        ]
+      }
+    }
+    {% endif %}
+    {% if page.title == 'FAQ' %}
+    ,{
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is context engineering?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Context engineering is the process of structuring and optimizing the information fed to AI models to ensure relevant, accurate, and consistent outputs. We use RAG, custom data integration, and prompt optimization."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a typical AI implementation take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Timelines vary by project scope. A readiness assessment takes 2-4 weeks, custom model development 4-12 weeks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer on-premise or cloud deployments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we support both cloud and local deployments for optimal privacy and performance."
+          }
+        }
+        // Add more as needed
+      ]
+    }
+    {% endif %}
+  ]
+}
+</script>
