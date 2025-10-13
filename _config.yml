@@ -1,15 +1,67 @@
 title: TeraContext.AI
-description: Advanced AI solutions for enterprise-scale context management.
+description: Specialized AI solutions for working with massive, complex documents that exceed standard context windows. Expert implementation of RAG, GraphRAG, RAPTOR, and advanced context management techniques for legal, construction, systems engineering, and enterprise applications.
+tagline: Mastering Context at Scale
 url: "https://teracontext.ai"
 baseurl: ""
 permalink: /:title/
 markdown: kramdown
+
+# Author and Organization
+author: TeraContext.AI Team
+organization: TeraContext.AI
+parent_organization: Joshua8.AI
+email: info@teracontext.ai
+
+# Social
+twitter_username: teracontextai
+github_username: teracontextai
+linkedin_company: teracontext-ai
+
+# SEO
+logo: /images/logo-teracontext.png
+social:
+  name: TeraContext.AI
+  links:
+    - https://twitter.com/teracontextai
+    - https://github.com/teracontextai
+    - https://linkedin.com/company/teracontext-ai
+
+# Analytics (to be configured)
+# google_analytics: UA-XXXXXXXX-X
+
+# Build settings
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
 defaults:
   - scope:
       path: ""
     values:
       layout: default
+      image: /images/social-share-default.jpg
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: TeraContext.AI Team
+      image: /images/social-share-default.jpg
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .claude
+  - IMAGE_REQUIREMENTS.md
+  - README.md
