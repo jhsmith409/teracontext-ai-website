@@ -26,10 +26,10 @@ M&A transactions involve thousands of pages across purchase agreements, exhibits
 - Citation tracking for audit trails
 
 **Results**
-- 70% reduction in document review time
-- Comprehensive cross-document risk identification
-- Automated flagging of conflicting terms
-- Detailed audit trail for compliance
+- Up to 70% faster review cycles for transaction teams
+- Automated risk mapping across 1,000+ pages
+- Conflict detection with 90%+ accuracy
+- Full audit trails for regulatory filings
 
 ---
 
@@ -66,10 +66,10 @@ A major infrastructure project has 15 volumes of specifications, multiple contra
 - Integration with project management systems
 
 **Results**
-- Instant specification retrieval by trade or product
-- Automated RFI response with relevant spec citations
-- Conflict identification between spec sections
-- 50% reduction in time searching for information
+- Sub-second specs lookup by CSI division or keyword
+- AI-drafted RFI responses with cited sections
+- Early detection of spec-drawing conflicts
+- 50%+ time savings on information hunts
 
 ---
 
@@ -190,16 +190,14 @@ Legislative analysis, regulatory development, public comment processing, and pol
 
 ## Your Use Case
 
-Don't see your specific scenario? TeraContext.AI's flexible approach adapts to any domain with large-context document challenges.
+Don't see your exact scenario? Our adaptable platform handles any large-context challenge, from healthcare protocols to R&D patent reviews.
 
-**Common characteristics of problems we solve:**
-- Documents exceeding 100K+ tokens
-- Need to find information across multiple documents
-- Complex cross-referencing and relationships
-- Time-critical information retrieval
-- Compliance and audit requirements
-- Domain-specific terminology and structure
+**Signs you're ready for TeraContext.AI:**
+- Documents >100K tokens or multi-file sets
+- Cross-references spanning sources
+- Urgent needs for synthesis or compliance
+- Domain jargon requiring precise retrieval
 
----
+**Next Step**: Share your use case for a customized demo.
 
-[Learn About Our Solutions](/solutions) | [Contact Us for Your Use Case](/contact)
+[Explore Solutions](/solutions) | [Contact Us](/contact)

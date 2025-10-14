@@ -26,10 +26,12 @@ RAG breaks documents into manageable chunks, creates semantic embeddings, and re
 - Compliance and audit requirements
 
 **Our Implementation**
-- Advanced chunking strategies that preserve context boundaries
-- Multi-modal embeddings for text, tables, and diagrams
-- Hybrid search combining semantic and keyword approaches
-- Citation tracking back to source documents and page numbers
+- Advanced chunking (semantic + structural) to avoid splitting key contexts
+- Multi-modal embeddings for text, tables, diagrams, and even legacy PDFs
+- Hybrid search: Semantic similarity + keyword boosts for precision
+- Full citation trails linking responses to exact pages/sources for audits
+
+*(Placeholder: Insert RAG architecture diagram here for visual flow)*
 
 ---
 
@@ -45,10 +47,12 @@ GraphRAG constructs knowledge graphs from your documents, capturing entities, re
 - Questions requiring inference across document sections
 
 **Our Implementation**
-- Automatic entity and relationship extraction
-- Ontology development for domain-specific concepts
-- Graph traversal algorithms optimized for LLM context
-- Integration with RAG for hybrid retrieval
+- LLM-powered entity/relationship extraction with 95%+ accuracy
+- Custom ontologies tailored to your domain (e.g., legal clauses, engineering interfaces)
+- Efficient graph traversal to fit LLM windows while capturing connections
+- Seamless RAG integration for retrieval + reasoning
+
+*(Placeholder: Insert GraphRAG knowledge graph diagram here)*
 
 ---
 
@@ -64,10 +68,12 @@ Hierarchical summarization builds multiple abstraction layers—from detailed co
 - Executive summaries with drill-down capability
 
 **Our Implementation**
-- RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval)
-- Custom hierarchical structures for domain-specific documents
-- Adaptive layer selection based on query complexity
-- Preservation of critical details at all abstraction levels
+- RAPTOR core with extensions for multi-document sets
+- Domain-tuned hierarchies (e.g., spec divisions for construction)
+- Query-driven layer selection: Overviews for broad asks, details for specifics
+- Detail preservation via entity linking across levels
+
+*(Placeholder: Insert RAPTOR hierarchy diagram here)*
 
 ---
 
@@ -95,14 +101,13 @@ Dynamic systems that learn from query patterns and optimize context delivery bas
 **The Reality**
 Real-world problems rarely fit neatly into a single technique. Our most powerful solutions combine multiple approaches:
 
-**RAG + GraphRAG**
-Semantic retrieval enhanced with relationship understanding—finding not just relevant passages but related concepts across documents.
+**RAG + GraphRAG**: Fast semantic search enriched by graph relationships—ideal for cross-document queries in legal due diligence.
 
-**Multi-Layer + RAG**
-Hierarchical summarization for document overview, with RAG providing detailed retrieval when needed.
+**Multi-Layer + RAG**: RAPTOR overviews for navigation, RAG drills for precision—perfect for construction spec reviews.
 
-**Adaptive + Graph**
-Learning systems that optimize graph traversal patterns based on query history and success metrics.
+**Adaptive + Graph**: Query history informs traversal; e.g., prioritize common paths in systems engineering docs.
+
+*(Placeholder: Insert hybrid approach diagram here summarizing flows)*
 
 ---
 
@@ -136,19 +141,15 @@ Learning systems that optimize graph traversal patterns based on query history a
 
 ## Implementation Flexibility
 
-We work with your preferred technology stack:
+We integrate with your stack for seamless large-context document processing:
 
-**LLM Providers**
-OpenAI, Anthropic, Google, Cohere, open-source models, and custom deployments
+**LLM Providers**: OpenAI (GPT series), Anthropic (Claude), Google (Gemini), Cohere, Hugging Face open-source, or fine-tuned models.
 
-**Vector Databases**
-Pinecone, Weaviate, Chroma, Milvus, Qdrant, and others
+**Vector Databases**: Pinecone, Weaviate, ChromaDB, Milvus, Qdrant—optimized for hybrid search.
 
-**Graph Databases**
-Neo4j, Amazon Neptune, Azure Cosmos DB, TigerGraph
+**Graph Databases**: Neo4j, Amazon Neptune, Azure Cosmos DB, TigerGraph for relationship-heavy data.
 
-**Deployment Options**
-Cloud (AWS, Azure, GCP), on-premises, hybrid, air-gapped environments
+**Deployment Options**: AWS/Azure/GCP cloud, on-premises, hybrid, or air-gapped for compliance (e.g., DoD standards).
 
 ---
 

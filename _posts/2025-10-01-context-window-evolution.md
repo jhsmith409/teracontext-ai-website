@@ -107,4 +107,4 @@ That's where TeraContext.AI focuses: not just using bigger hammers, but choosing
 
 ---
 
-*Want to discuss your large-context document challenges? [Contact us](/contact) for a consultation.*
+Ready to go beyond context limits? [Contact us](/contact) for a free assessment of your document pipeline.

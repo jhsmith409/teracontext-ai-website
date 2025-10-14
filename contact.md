@@ -109,10 +109,8 @@ Stay informed about advances in large-context AI and document processing:
 
 ## Ready to Tackle Your Complex Documents?
 
-We're excited to learn about your challenges and discuss how TeraContext.AI can help.
+Expect a personalized response within one business day—let's turn your document challenges into AI advantages.
 
-**Email us at: info@teracontext.ai**
+**Start here: info@teracontext.ai**
 
----
-
-[Back to Home](/) | [Learn About Our Solutions](/solutions) | [View Use Cases](/use-cases)
+[Home](/index.md) | [Solutions](/solutions) | [Use Cases](/use-cases)

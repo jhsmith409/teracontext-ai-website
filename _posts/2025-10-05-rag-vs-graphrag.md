@@ -181,4 +181,4 @@ At TeraContext.AI, we analyze your specific needs and implement the optimal comb
 
 ---
 
-*Need help choosing the right approach for your documents? [Contact us](/contact) for an expert consultation.*
+*Unsure which technique fits your docs? [Contact us](/contact) to compare RAG/GraphRAG for your use case.*

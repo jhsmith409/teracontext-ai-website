@@ -200,4 +200,4 @@ That's where TeraContext.AI's expertise delivers value: not just implementing RA
 
 ---
 
-*Want to explore hierarchical summarization for your document challenges? [Contact us](/contact) for a detailed consultation.*
+*See how RAPTOR can layer your docs for better AI access? [Contact us](/contact) for a custom demo.*
