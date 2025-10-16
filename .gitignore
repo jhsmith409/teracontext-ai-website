@@ -8,3 +8,14 @@ Gemfile.lock
 *.gem
 .DS_Store
 .claude
+.claude/
+
+# Internal documentation (not for public repo)
+CONTENT_SUMMARY.md
+IMAGE_REQUIREMENTS.md
+IMAGE_STATUS.md
+*NOTES*.md
+*TODO*.md
+
+# Backup files
+*.backup
