@@ -8,8 +8,6 @@ description: TeraContext.AI specializes in large language model solutions for co
 
 ## When Your Documents Exceed What AI Can Handle
 
-![Hero Image: Mastering Context at Scale](/images/hero-context-scale.jpg)
-
 Even as large language models push context windows to 1M+ tokens, enterprise documents—like sprawling legal agreements or multi-volume construction specs—still overwhelm them.
 
 **TeraContext.AI solves this with intelligent, scalable context management.**
