@@ -1,0 +1,7 @@
+{
+  "buildCommand": "bundle install && bundle exec jekyll build",
+  "outputDirectory": "_site",
+  "framework": null,
+  "installCommand": "gem install bundler",
+  "devCommand": "bundle exec jekyll serve --port $PORT"
+}
