@@ -14,6 +14,8 @@ TeraContext.AI solves concrete problems across industries where document complex
 
 ## Legal & Regulatory
 
+![Legal Industry Visual](/images/industry-legal.jpg)
+
 ### Complex Transaction Due Diligence
 
 **The Challenge**
@@ -53,6 +55,8 @@ Financial institutions must ensure policies and procedures comply with constantl
 ---
 
 ## Commercial Construction
+
+![Construction Industry Visual](/images/industry-construction.jpg)
 
 ### Large-Project Specification Management
 

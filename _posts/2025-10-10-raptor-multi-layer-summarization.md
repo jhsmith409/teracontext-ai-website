@@ -23,7 +23,7 @@ Flat retrieval can't see the forest for the trees.
 
 ## Enter RAPTOR: Recursive Abstractive Processing
 
-RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval) introduces hierarchical summarization to the retrieval process.
+[RAPTOR](https://arxiv.org/html/2401.18059v1){:target="_blank" rel="noopener noreferrer"} (Recursive Abstractive Processing for Tree-Organized Retrieval) introduces hierarchical summarization to the retrieval process.
 
 ### How RAPTOR Works
 

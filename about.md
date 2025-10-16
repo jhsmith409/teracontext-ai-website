@@ -8,7 +8,7 @@ description: Learn about TeraContext.AI's mission to make large language models 
 
 ## Making AI Work With Documents of Any Size
 
-TeraContext.AI is a specialized product line of Joshua8.AI, focused exclusively on solving one of the most challenging problems in AI today: **enabling large language models to work effectively with documents that exceed their context window limits**.
+TeraContext.AI is a specialized product line of [Joshua8.AI](https://joshua8.ai){:target="_blank" rel="noopener noreferrer"}, focused exclusively on solving one of the most challenging problems in AI today: **enabling large language models to work effectively with documents that exceed their context window limits**.
 
 ### The Challenge We Solve
 
@@ -31,7 +31,7 @@ Intelligent chunking, embedding, and retrieval that finds the needle in the hays
 Knowledge graph structures that preserve relationships and enable reasoning across complex document interconnections.
 
 **Multi-Layer Summarization**
-RAPTOR and other advanced techniques that build hierarchical understanding, from high-level overviews to detailed specifics.
+[RAPTOR](https://arxiv.org/html/2401.18059v1){:target="_blank" rel="noopener noreferrer"} and other advanced techniques that build hierarchical understanding, from high-level overviews to detailed specifics.
 
 **Adaptive Context Assembly**
 Dynamic systems that learn from query patterns and optimize context delivery based on task requirements.
@@ -39,9 +39,9 @@ Dynamic systems that learn from query patterns and optimize context delivery bas
 **Domain-Specific Optimization**
 Custom approaches tuned for legal documents, construction specs, engineering documentation, and other specialized domains.
 
-### Part of the Joshua8.AI Ecosystem
+### Part of the [Joshua8.AI](https://joshua8.ai){:target="_blank" rel="noopener noreferrer"} Ecosystem
 
-TeraContext.AI benefits from the broader Joshua8.AI platform's capabilities while maintaining focused expertise in large-context document processing:
+TeraContext.AI benefits from the broader [Joshua8.AI](https://joshua8.ai){:target="_blank" rel="noopener noreferrer"} platform's capabilities while maintaining focused expertise in large-context document processing:
 
 - Access to cutting-edge AI research and implementation
 - Integration with enterprise workflows and systems

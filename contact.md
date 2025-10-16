@@ -30,16 +30,16 @@ We offer complimentary initial consultations to:
 ## Reach Us
 
 ### Email
-**info@teracontext.ai**
+**[info@teracontext.ai](mailto:info@teracontext.ai)**
 
 For general inquiries, consultation requests, or partnership opportunities.
 
 ### Part of Joshua8.AI
 
-TeraContext.AI is a specialized product line of Joshua8.AI.
+TeraContext.AI is a specialized product line of [Joshua8.AI](https://joshua8.ai){:target="_blank" rel="noopener noreferrer"}.
 
 For information about the broader Joshua8.AI ecosystem:
-**contact@joshua8.ai**
+**[contact@joshua8.ai](mailto:contact@joshua8.ai)**
 
 ---
 
@@ -94,16 +94,16 @@ Stay informed about advances in large-context AI and document processing:
 
 **Blog**: [TeraContext.AI Blog](/blog) - Technical insights and industry applications
 
-**Joshua8.AI**: Learn about our parent company and broader AI capabilities
+**[Joshua8.AI](https://joshua8.ai){:target="_blank" rel="noopener noreferrer"}**: Learn about our parent company and broader AI capabilities
 
 ---
 
 ## Office Location
 
 **TeraContext.AI**
-*A Joshua8.AI Product Line*
+*A [Joshua8.AI](https://joshua8.ai){:target="_blank" rel="noopener noreferrer"} Product Line*
 
-[Address to be added]
+McLean, Virginia
 
 ---
 
@@ -111,6 +111,6 @@ Stay informed about advances in large-context AI and document processing:
 
 Expect a personalized response within one business day—let's turn your document challenges into AI advantages.
 
-**Start here: info@teracontext.ai**
+**Start here: [info@teracontext.ai](mailto:info@teracontext.ai)**
 
 [Home](/index.md) | [Solutions](/solutions) | [Use Cases](/use-cases)

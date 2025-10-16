@@ -1,4 +1,4 @@
-# robots.txt for Joshua8.AI
+# robots.txt for TeraContext.AI
 # Allow all search engines to crawl the site
 
 User-agent: *
@@ -9,4 +9,4 @@ Disallow: /admin/
 Disallow: /.git/
 
 # Sitemap location
-Sitemap: https://joshua8.ai/sitemap.xml
+Sitemap: https://teracontext.ai/sitemap.xml

@@ -31,10 +31,12 @@ Browse by topic: [RAG/Retrieval](/blog/tag/rag), [GraphRAG](/blog/tag/graphrag),
 
 - **RAG and Retrieval Techniques** - Implementation strategies and optimization
 - **GraphRAG** - Knowledge graph approaches to document understanding
-- **Multi-Layer Summarization** - RAPTOR and hierarchical techniques
+- **Multi-Layer Summarization** - [RAPTOR](https://arxiv.org/html/2401.18059v1){:target="_blank" rel="noopener noreferrer"} and hierarchical techniques
 - **Industry Applications** - Legal, construction, systems engineering use cases
 - **LLM Context Management** - Working within and beyond context window limits
-- **Performance Optimization** - Cost and latency considerations
+- **Model Optimization for Extended Context** - Quantization techniques, KV cache optimization, and memory-efficient inference
+- **Advanced Architectures** - Mixture-of-Experts (MoE) models, attention mechanism innovations, and sparse transformers
+- **Performance Optimization** - Cost and latency considerations for large-context workloads
 - **Hybrid Approaches** - Combining techniques for optimal results
 
 ---

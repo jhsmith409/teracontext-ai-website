@@ -1,8 +1,7 @@
 <header>
   <nav>
     <a href="/" class="logo">
-      <img src="/rockpilespear.jpg" alt="Joshua8.AI Logo" class="logo-image">
-      <span class="logo-text">Joshua8.AI</span>
+      <img src="/images/logo-teracontext.jpg" alt="TeraContext.AI Logo" class="logo-image">
     </a>
     <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
       <span class="hamburger-line"></span>
@@ -11,17 +10,15 @@
     </button>
     <div class="nav-center" id="nav-menu">
       <ul>
-        <li><a href="/our-story">History</a></li>
-        <li><a href="/services">Services</a></li>
+        <li><a href="/solutions">Solutions</a></li>
+        <li><a href="/use-cases">Use Cases</a></li>
         <li class="dropdown">
           <a href="#">Resources</a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="/blog">Blog</a></li>
-            <li><a href="/industry-insights">Insights</a></li>
             <li><a href="/faq">FAQ</a></li>
           </ul>
         </li>
-        <li><a href="/how-to-work-with-us">Work With Us</a></li>
         <li><a href="/about">About</a></li>
       </ul>
     </div>
@@ -98,36 +95,20 @@ nav {
 
 .logo {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
   padding: 0.5rem;
   margin: -0.5rem;
 }
 
 .logo-image {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.logo-text {
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  white-space: nowrap;
+  width: 180px;
+  height: auto;
+  object-fit: contain;
 }
 
 @media (max-width: 768px) {
   .logo-image {
-    width: 40px;
-    height: 40px;
-  }
-
-  .logo-text {
-    font-size: 0.95rem;
+    width: 140px;
   }
 }
 </style>

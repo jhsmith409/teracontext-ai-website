@@ -8,6 +8,8 @@ description: TeraContext.AI specializes in large language model solutions for co
 
 ## When Your Documents Exceed What AI Can Handle
 
+![Hero Image: Mastering Context at Scale](/images/hero-context-scale.jpg)
+
 Even as large language models push context windows to 1M+ tokens, enterprise documents—like sprawling legal agreements or multi-volume construction specs—still overwhelm them.
 
 **TeraContext.AI solves this with intelligent, scalable context management.**
@@ -23,7 +25,7 @@ Our advanced techniques retrieve and assemble only the relevant context your AI 
 We employ cutting-edge techniques including:
 - **RAG (Retrieval-Augmented Generation)** - Intelligent document retrieval and contextualization
 - **GraphRAG** - Knowledge graph-based context organization
-- **Multi-Layer Summarization** - RAPTOR and advanced hierarchical techniques
+- **Multi-Layer Summarization** - [RAPTOR](https://arxiv.org/html/2401.18059v1){:target="_blank" rel="noopener noreferrer"} and advanced hierarchical techniques
 - **Adaptive Context Assembly** - Dynamic context construction based on query patterns
 - **Hybrid Approaches** - Combining multiple methods for optimal results
 
@@ -55,9 +57,9 @@ We employ cutting-edge techniques including:
 
 ## Why TeraContext.AI?
 
-**Part of the Joshua8.AI Product Line**
+**Part of the [Joshua8.AI](https://joshua8.ai){:target="_blank" rel="noopener noreferrer"} Product Line**
 
-TeraContext.AI brings focused expertise in large-context document processing as part of the broader Joshua8.AI ecosystem. We combine:
+TeraContext.AI brings focused expertise in large-context document processing as part of the broader [Joshua8.AI](https://joshua8.ai){:target="_blank" rel="noopener noreferrer"} ecosystem. We combine:
 
 - Deep expertise in LLM architecture and limitations
 - Production-proven techniques for context management

@@ -6,7 +6,7 @@ description: TeraContext.AI's technical approaches to managing massive document 
 
 # Our Solutions
 
-## Advanced Context Management Techniques
+## Advanced Context Management and Fine-Tuning Techniques
 
 TeraContext.AI employs a sophisticated toolkit of techniques to make large language models work effectively with documents that exceed standard context windows. We don't rely on a single approach—we combine methods strategically based on your specific requirements.
 
@@ -31,8 +31,6 @@ RAG breaks documents into manageable chunks, creates semantic embeddings, and re
 - Hybrid search: Semantic similarity + keyword boosts for precision
 - Full citation trails linking responses to exact pages/sources for audits
 
-*(Placeholder: Insert RAG architecture diagram here for visual flow)*
-
 ---
 
 ### GraphRAG
@@ -52,11 +50,9 @@ GraphRAG constructs knowledge graphs from your documents, capturing entities, re
 - Efficient graph traversal to fit LLM windows while capturing connections
 - Seamless RAG integration for retrieval + reasoning
 
-*(Placeholder: Insert GraphRAG knowledge graph diagram here)*
-
 ---
 
-### Multi-Layer Summarization (RAPTOR & Beyond)
+### Multi-Layer Summarization ([RAPTOR](https://arxiv.org/html/2401.18059v1){:target="_blank" rel="noopener noreferrer"} & Beyond)
 
 **What It Does**
 Hierarchical summarization builds multiple abstraction layers—from detailed content to high-level overviews—allowing navigation from general to specific.
@@ -73,27 +69,6 @@ Hierarchical summarization builds multiple abstraction layers—from detailed co
 - Query-driven layer selection: Overviews for broad asks, details for specifics
 - Detail preservation via entity linking across levels
 
-*(Placeholder: Insert RAPTOR hierarchy diagram here)*
-
----
-
-### Adaptive Context Assembly
-
-**What It Does**
-Dynamic systems that learn from query patterns and optimize context delivery based on task requirements and document structure.
-
-**When We Use It**
-- Repeated queries against the same document set
-- Evolving understanding of document contents
-- Performance optimization for high-volume processing
-- Custom workflows with specific information needs
-
-**Our Implementation**
-- Query pattern analysis and optimization
-- Context window management and prioritization
-- Caching strategies for frequently accessed content
-- Feedback loops for continuous improvement
-
 ---
 
 ### Hybrid Approaches
@@ -105,9 +80,7 @@ Real-world problems rarely fit neatly into a single technique. Our most powerful
 
 **Multi-Layer + RAG**: RAPTOR overviews for navigation, RAG drills for precision—perfect for construction spec reviews.
 
-**Adaptive + Graph**: Query history informs traversal; e.g., prioritize common paths in systems engineering docs.
-
-*(Placeholder: Insert hybrid approach diagram here summarizing flows)*
+**Semantic Search + Classic Keyword Search**: For longer context documents, semantic (vector) searches can miss key details which conventional search finds easily.
 
 ---
 
@@ -143,23 +116,28 @@ Real-world problems rarely fit neatly into a single technique. Our most powerful
 
 We integrate with your stack for seamless large-context document processing:
 
-**LLM Providers**: OpenAI (GPT series), Anthropic (Claude), Google (Gemini), Cohere, Hugging Face open-source, or fine-tuned models.
+**LLM Providers**:
+  - Local (on-premise, self-hosted open source models such as Qwen, GPT-OSS, Gemma, Llama, Claude, Mistral, Granite)
+  - Cloud (OpenRouter including models from OpenAI, Anthropic, Google, Alibaba, Microsoft, Mistral, IBM)
+  - Fine-Tuning available for locally-hosted models
 
-**Vector Databases**: Pinecone, Weaviate, ChromaDB, Milvus, Qdrant—optimized for hybrid search.
+**Front Ends / GUIs**: TeraContext (Customized), RAGFlow, OpenWebUI, or AnythingLLM.
 
-**Graph Databases**: Neo4j, Amazon Neptune, Azure Cosmos DB, TigerGraph for relationship-heavy data.
+**Vector Databases**: ChromaDB, Milvus, Lance, Elasticsearch, Infinity, or Neo4j.
 
-**Deployment Options**: AWS/Azure/GCP cloud, on-premises, hybrid, or air-gapped for compliance (e.g., DoD standards).
+**Graph Databases**: Neo4j, Elasticsearch, or Infinity.
+
+**Deployment Options**: Cloud api, dedicated cloud, on-premises, hybrid, or air-gapped.
 
 ---
 
 ## Performance & Scalability
 
-- Optimized for documents from hundreds to millions of pages
-- Sub-second retrieval for most queries
-- Parallel processing for document ingestion
+- Optimized for documents from hundreds of words to hundreds of megabytes
+- Self-serve document ingestion or available as a service
 - Incremental updates without full reprocessing
 - Cost optimization for LLM API usage
+- Local self-hosting for privacy and compliance
 
 ---
 
