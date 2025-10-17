@@ -123,9 +123,9 @@ We integrate with your stack for seamless large-context document processing:
 
 **Front Ends / GUIs**: TeraContext (Customized), RAGFlow, OpenWebUI, or AnythingLLM.
 
-**Vector Databases**: ChromaDB, Milvus, Lance, Elasticsearch, Infinity, or Neo4j.
+**Vector Databases**: ChromaDB, Milvus, Lance, Elasticsearch, Infinity, Neo4j, or Supabase.
 
-**Graph Databases**: Neo4j, Elasticsearch, or Infinity.
+**Graph Databases**: Neo4j, Elasticsearch, Infinity, or Supabase.
 
 **Deployment Options**: Cloud api, dedicated cloud, on-premises, hybrid, or air-gapped.
 

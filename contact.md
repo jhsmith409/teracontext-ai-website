@@ -113,4 +113,4 @@ Expect a personalized response within one business day—let's turn your documen
 
 **Start here: [info@teracontext.ai](mailto:info@teracontext.ai)**
 
-[Home](/index.md) | [Solutions](/solutions) | [Use Cases](/use-cases)
+[Home](/) | [Solutions](/solutions) | [Use Cases](/use-cases)
