@@ -32,7 +32,6 @@ social:
 # Build settings
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-seo-tag
 
 # Collections

@@ -86,7 +86,7 @@ The site focuses on:
 Key settings:
 - Site metadata: title, description, tagline, URL
 - Social links: Twitter, GitHub, LinkedIn
-- Plugins: jekyll-feed, jekyll-sitemap, jekyll-seo-tag
+- Plugins: jekyll-feed, jekyll-seo-tag (custom sitemap.xml used instead of jekyll-sitemap plugin)
 - Permalinks:
   - Pages: `/:title/` (e.g., `/about/`, `/solutions/`)
   - Posts: `/blog/:year/:month/:day/:title/`
