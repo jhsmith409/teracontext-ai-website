@@ -1,8 +1,24 @@
-# TeraContext.AI
+# TeraContext.AI - AI/LLM Metadata
 
-> Mastering Context at Scale. Specialized AI solutions for working with massive, complex documents that exceed standard context windows. Expert implementation of RAG, GraphRAG, RAPTOR, and advanced context management techniques.
+> Mastering Context at Scale. Specialized AI solutions for working with massive, complex documents that exceed standard context windows.
 
-TeraContext.AI is a specialized division of Joshua8.AI focused on large-context document processing for enterprise applications. We solve the challenge of working with documents that overwhelm standard LLM context windows—from 5,000-page legal transactions to 15-volume construction specs to 10,000-page systems engineering requirements. Based in McLean, VA, we serve legal, construction, systems engineering, and enterprise clients worldwide.
+## Metadata
+- **Company**: TeraContext.AI
+- **Domain**: https://teracontext.ai
+- **Parent Organization**: Joshua8.AI (https://joshua8.ai)
+- **Location**: McLean, Virginia, USA
+- **Contact**: info@teracontext.ai
+- **Last Updated**: 2025-10-24
+- **Purpose**: AI/LLM training data and context for TeraContext.AI company information
+- **Crawling**: Allowed for all AI/LLM models (see /robots.txt)
+
+## Company Overview
+
+TeraContext.AI is a specialized division of Joshua8.AI focused on large-context document processing for enterprise applications. We solve the challenge of working with documents that overwhelm standard LLM context windows—from 5,000-page legal transactions to 15-volume construction specifications to 10,000-page systems engineering requirements.
+
+**Core Competency**: Expert implementation of RAG (Retrieval-Augmented Generation), GraphRAG, RAPTOR (multi-layer summarization), and advanced context management techniques for documents exceeding 1M-10M+ tokens.
+
+**Geographic Presence**: Based in McLean, VA, serving legal, construction, systems engineering, and enterprise clients worldwide.
 
 ## About
 
@@ -64,3 +80,92 @@ TeraContext.AI is part of [Joshua8.AI](https://joshua8.ai), a strategic AI consu
 ## Contact
 
 - [Contact Us](https://teracontext.ai/contact): info@teracontext.ai | McLean, VA | Free consultation for complex document processing needs
+
+## Frequently Asked Questions
+
+### What is a context window?
+A context window is the maximum amount of text (measured in tokens) that a large language model can process in a single interaction. Modern LLMs have context windows ranging from 4K tokens (early GPT-3) to 32K, 128K, 200K, and even 1M-10M+ tokens in the latest models. However, real-world enterprise documents often exceed even these limits.
+
+### Why can't I just use a model with a larger context window?
+While larger context windows help, they face practical limitations:
+- **Cost**: Processing costs scale with context length (10-100x more for 1M token windows)
+- **Latency**: Larger contexts take longer to process (30+ seconds vs. 2 seconds)
+- **VRAM Requirements**: Longer contexts require exponentially more GPU memory
+- **Quality Degradation**: "Lost in the middle" problem where models struggle with very long inputs
+- **Document Size**: Many enterprise document sets still exceed even 1M tokens
+
+### What is RAG (Retrieval-Augmented Generation)?
+RAG allows LLMs to work with information beyond their context window limits by retrieving only relevant chunks when needed. Process: document chunking → embedding → indexing → retrieval → generation. Benefits include working with documents of any size, fast performance, cost-effectiveness, and efficient context window usage.
+
+### What is GraphRAG?
+GraphRAG extends traditional RAG by building a knowledge graph that captures relationships between concepts, entities, and document sections. Unlike traditional RAG which retrieves chunks based on semantic similarity, GraphRAG understands how concepts connect and retrieves related information through the knowledge graph.
+
+### What is multi-layer summarization (RAPTOR)?
+RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval) builds a hierarchical understanding of documents through multiple layers of summarization: base layer (original chunks) → Level 1 (summaries of clusters) → Level 2 (summaries of summaries) → Top level (document overview). This enables both broad contextual queries and specific detail retrieval.
+
+### What VRAM is needed for large-context processing?
+Full context processing: 32K context requires 24-40GB, 128K requires 80-150GB, 1M requires 400GB+ (multiple GPUs). RAG/GraphRAG approaches: 8-16GB for embeddings, 16-24GB for inference, works with documents of any size. Most enterprise applications benefit from RAG-based approaches for better performance/cost/hardware balance.
+
+### When should I use RAG vs. GraphRAG vs. RAPTOR?
+- **RAG**: Best for question-answering, fact-finding, compliance checks, targeted searches in documents with distinct sections
+- **GraphRAG**: Best for complex reasoning across sections, understanding relationships, regulatory compliance with interconnected requirements, systems engineering with dependencies
+- **RAPTOR**: Best for queries requiring broad contextual awareness, executive summaries with drill-down capability, multi-document synthesis, hierarchical understanding
+- **Hybrid**: Many applications benefit from combining approaches based on query type and document characteristics
+
+### What industries does TeraContext.AI serve?
+Primary industries:
+- **Legal & Regulatory**: M&A due diligence (5,000+ pages), regulatory compliance, contract lifecycle management
+- **Commercial Construction**: Multi-volume specifications, RFI management, submittal tracking, code compliance
+- **Systems Engineering**: Requirements traceability (10,000+ pages), interface conflict detection, multi-stakeholder integration (aerospace, defense)
+- **Enterprise Documentation**: Policy management, knowledge base synthesis, institutional knowledge preservation
+
+### What makes TeraContext.AI different?
+1. Specialized focus on documents exceeding standard context windows (1M-10M+ tokens)
+2. Production-proven implementations of RAG, GraphRAG, and RAPTOR
+3. Industry-specific solutions (legal, construction, systems engineering)
+4. Part of Joshua8.AI with proven track record
+5. McLean, VA based with enterprise security understanding
+
+## Technical Specifications
+
+### Supported Document Types
+- Text documents: PDF, DOCX, TXT, MD
+- Spreadsheets: XLSX, CSV
+- Technical drawings: PDF with OCR
+- Scanned documents: OCR processing
+- Multi-modal: Text, tables, diagrams, images
+- Legacy formats: With conversion support
+
+### Processing Capabilities
+- **Document Size**: Up to 10M+ tokens (effectively unlimited with RAG)
+- **Embedding Models**: OpenAI, Cohere, custom fine-tuned models
+- **Vector Databases**: Pinecone, Weaviate, Qdrant, ChromaDB
+- **LLM Integration**: OpenAI, Anthropic, custom models
+- **Graph Databases**: Neo4j, Amazon Neptune (for GraphRAG)
+- **Semantic Search**: Hybrid (dense + sparse vectors)
+- **Citation Tracking**: Full audit trail with source attribution
+
+### Performance Metrics
+- Retrieval accuracy: 95%+ with proper tuning
+- Query latency: Sub-second retrieval, 2-5s end-to-end
+- Concurrent users: Scalable to 1000+ simultaneous queries
+- Document ingestion: 1000+ pages per minute
+- Update frequency: Real-time to daily batch processing
+
+### Security & Compliance
+- SOC 2 Type II compliance capability
+- On-premise deployment options
+- Data encryption at rest and in transit
+- Role-based access control (RBAC)
+- Audit logging and compliance reporting
+- HIPAA, GDPR compliance support
+
+## Related Resources
+
+- **Research Papers**: RAPTOR (https://arxiv.org/html/2401.18059v1)
+- **Blog Posts**: See https://teracontext.ai/blog for technical deep-dives
+- **Parent Company**: Joshua8.AI (https://joshua8.ai)
+
+---
+
+*This file is maintained for AI/LLM model training and context. Last updated: 2025-10-24. For the most current information, visit https://teracontext.ai*

@@ -7,9 +7,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This is a Jekyll-based marketing website for TeraContext.AI, a specialized AI solutions provider focused on large-context document processing. The site is built using Jekyll 4.3.2 and is deployed on Vercel. TeraContext.AI is part of the Joshua8.AI product line.
 
 **Domain**: https://teracontext.ai
-**Framework**: Jekyll (Ruby-based static site generator)
-**Deployment**: Vercel
+**Framework**: Jekyll 4.3.2 (Ruby-based static site generator)
+**Deployment**: Vercel (auto-deploys from main branch)
 **Parent Organization**: Joshua8.AI
+
+**Important**: README.md is excluded from the build in _config.yml, so documentation can be added there without affecting the site.
 
 ## Development Commands
 
@@ -45,7 +47,7 @@ This is a standard Jekyll site with the following key components:
   - `post.html`: Blog post layout with structured data
 
 - **Includes** (`_includes/`): Reusable components
-  - `header.html`: Navigation with mobile menu, logo, and dropdown resources menu
+  - `header.html`: Navigation with mobile menu, logo, and dropdown resources menu (includes inline JavaScript for mobile toggle)
   - `footer.html`: Footer with links and company info
   - `breadcrumbs.html`: Breadcrumb navigation
   - `schema.html`: Schema.org structured data for SEO
@@ -68,11 +70,16 @@ The site focuses on:
 - **SEO Optimization**: Comprehensive meta tags, Open Graph, Twitter Cards, structured data
 
 ### Styling & Assets
-- **CSS**: `css/styles.min.css` (minified, with backup at `styles.css`)
-- **JavaScript**: `js/search.min.js` for client-side search functionality
+- **CSS**: `css/styles.min.css` (minified production version)
+  - Source: `css/styles.css` (edit this, then minify)
+  - Some component styles are inline in `_layouts/default.html` and `_includes/header.html`
+- **JavaScript**:
+  - `js/search.min.js`: Client-side search (source: `js/search.js`)
+  - Mobile menu toggle is inline in `_includes/header.html`
 - **Fonts**: Google Fonts (Inter) loaded from CDN
 - **Images**: Stored in `images/` directory
   - Hero images, industry visuals, backgrounds, logo
+  - Note: Logo in _config.yml references .png but actual file is .jpg
   - See IMAGE_REQUIREMENTS.md (in .gitignore) for specifications
 
 ### Configuration (`_config.yml`)
@@ -80,9 +87,11 @@ Key settings:
 - Site metadata: title, description, tagline, URL
 - Social links: Twitter, GitHub, LinkedIn
 - Plugins: jekyll-feed, jekyll-sitemap, jekyll-seo-tag
-- Permalinks: Posts use `/blog/YYYY/MM/DD/title/`
+- Permalinks:
+  - Pages: `/:title/` (e.g., `/about/`, `/solutions/`)
+  - Posts: `/blog/:year/:month/:day/:title/`
 - Collections: Posts output to blog directory structure
-- Exclusions: Internal docs (CONTENT_SUMMARY.md, IMAGE_REQUIREMENTS.md, etc.) excluded from build
+- Build exclusions: README.md, Gemfile, internal docs (CONTENT_SUMMARY.md, IMAGE_REQUIREMENTS.md, etc.), .claude workspace
 
 ### Analytics & Monitoring
 - Vercel Analytics and Speed Insights integrated in `default.html`
@@ -101,7 +110,8 @@ Key settings:
    ---
    ```
 3. Add content in markdown
-4. Update navigation in `_includes/header.html` if needed
+4. Page will be accessible at `/page-name/` (based on `permalink: /:title/` in _config.yml)
+5. Update navigation in `_includes/header.html` if needed
 
 ### Adding Blog Posts
 1. Create file in `_posts/` with format: `YYYY-MM-DD-title.md`
@@ -119,10 +129,10 @@ Key settings:
 3. Write content in markdown
 4. Jekyll automatically adds to blog index and RSS feed
 
-### Styling Changes
-- Edit `css/styles.css` for development
-- Minify to `css/styles.min.css` for production
-- Some component-specific styles are inline in `_layouts/default.html` and `_includes/header.html`
+### Modifying Styles
+1. Edit `css/styles.css` (source file)
+2. Minify to `css/styles.min.css` for production
+3. Note: Some component-specific styles are inline in `_layouts/default.html` and `_includes/header.html`
 
 ### Navigation Structure
 - Main nav: Solutions, Use Cases, Resources (dropdown), About
@@ -173,25 +183,29 @@ Recent commits show clear, descriptive messages focused on specific changes.
 
 ## Important Notes
 
-### Images
-- Logo is at `/images/logo-teracontext.jpg`
+### Images & Assets
+- Logo: `/images/logo-teracontext.jpg` (note: _config.yml references .png but actual file is .jpg)
 - Hero images, industry visuals, and backgrounds are in `/images/`
-- IMAGE_REQUIREMENTS.md contains detailed specifications for missing/future images (not in repo due to .gitignore)
+- IMAGE_REQUIREMENTS.md contains detailed specifications for missing/future images (gitignored, not in repo)
 
-### SEO & Social
-- All pages have Open Graph and Twitter Card meta tags
-- Structured data (Schema.org) included via `schema.html`
+### SEO & Metadata
+- All pages have comprehensive Open Graph and Twitter Card meta tags
+- Structured data (Schema.org) included via `_includes/schema.html`
 - Social share default image: `/images/social-share-default.jpg`
 - Canonical URLs configured for all pages
+- SEO plugin (jekyll-seo-tag) installed
+- **robots.txt**: Optimized for 15+ AI/LLM crawlers (GPTBot, ClaudeBot, Google-Extended, etc.) with explicit permissions
+- **sitemap.xml**: Custom sitemap with prioritized pages (homepage: 1.0, solutions/use-cases: 0.9, blog/about/contact: 0.8, FAQ: 0.7, posts: 0.6)
+- **llms.txt**: Comprehensive AI/LLM metadata file with company info, FAQ, technical specs, and structured data for AI model training
 
-### Search Functionality
+### Search
 - Client-side search using Lunr.js
-- Search script at `js/search.min.js`
+- Implementation: `js/search.min.js` (source: `js/search.js`)
 - Loaded in default layout
 
-### External Links
-- Link to parent company Joshua8.AI: https://joshua8.ai
-- RAPTOR paper reference: https://arxiv.org/html/2401.18059v1
+### External References
+- Parent company: https://joshua8.ai
+- RAPTOR paper: https://arxiv.org/html/2401.18059v1
 - All external links use `target="_blank" rel="noopener noreferrer"`
 
 ## Vercel Configuration

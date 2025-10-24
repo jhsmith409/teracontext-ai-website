@@ -1,46 +1,111 @@
 # robots.txt for TeraContext.AI
-# Allow all search engines and AI crawlers to crawl the site
+# Optimized for traditional SEO and AI/LLM discovery
+# Last updated: 2025-10-24
 
+# ===========================================
+# DEFAULT POLICY - Allow all crawlers
+# ===========================================
 User-agent: *
 Allow: /
+Crawl-delay: 0
 
-# Explicit allow for AI crawlers
+# ===========================================
+# AI/LLM CRAWLERS - Explicit permissions
+# ===========================================
+
+# OpenAI Crawlers
 User-agent: GPTBot
-Allow: /
-
 User-agent: ChatGPT-User
 Allow: /
 
+# Anthropic (Claude)
 User-agent: ClaudeBot
-Allow: /
-
 User-agent: anthropic-ai
 Allow: /
 
+# Google AI
 User-agent: Google-Extended
+User-agent: GoogleOther
 Allow: /
 
+# Common Crawl (used by many AI models)
 User-agent: CCBot
 Allow: /
 
+# Cohere
 User-agent: cohere-ai
 Allow: /
 
+# Perplexity AI
 User-agent: PerplexityBot
 Allow: /
 
+# ByteDance (TikTok)
 User-agent: Bytespider
 Allow: /
 
+# Apple Intelligence
 User-agent: Applebot-Extended
 Allow: /
 
+# Meta AI
 User-agent: FacebookBot
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
 Allow: /
 
-# Disallow crawling of admin or system directories if they exist
+# Amazon (Alexa)
+User-agent: Amazonbot
+Allow: /
+
+# Diffbot
+User-agent: Diffbot
+Allow: /
+
+# AI2 (Allen Institute for AI)
+User-agent: AI2Bot
+Allow: /
+
+# Omgili (AI data collection)
+User-agent: omgilibot
+User-agent: omgili
+Allow: /
+
+# YouBot (You.com AI search)
+User-agent: YouBot
+Allow: /
+
+# ===========================================
+# TRADITIONAL SEARCH ENGINE CRAWLERS
+# ===========================================
+
+# Google
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-News
+Allow: /
+
+# Bing
+User-agent: Bingbot
+User-agent: BingPreview
+Allow: /
+
+# ===========================================
+# DISALLOWED PATHS
+# ===========================================
+User-agent: *
 Disallow: /admin/
 Disallow: /.git/
+Disallow: /.jekyll-cache/
+Disallow: /.sass-cache/
+Disallow: /vendor/
+Disallow: /_site/
 
-# Sitemap location
+# ===========================================
+# SITEMAP & METADATA
+# ===========================================
 Sitemap: https://teracontext.ai/sitemap.xml
+Sitemap: https://teracontext.ai/feed.xml
+
+# AI/LLM specific metadata (see /llms.txt)
+# https://teracontext.ai/llms.txt
