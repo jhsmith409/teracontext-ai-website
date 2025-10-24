@@ -1,0 +1,66 @@
+# TeraContext.AI
+
+> Mastering Context at Scale. Specialized AI solutions for working with massive, complex documents that exceed standard context windows. Expert implementation of RAG, GraphRAG, RAPTOR, and advanced context management techniques.
+
+TeraContext.AI is a specialized division of Joshua8.AI focused on large-context document processing for enterprise applications. We solve the challenge of working with documents that overwhelm standard LLM context windows—from 5,000-page legal transactions to 15-volume construction specs to 10,000-page systems engineering requirements. Based in McLean, VA, we serve legal, construction, systems engineering, and enterprise clients worldwide.
+
+## About
+
+- [About Us](https://teracontext.ai/about): Our mission to make massive documents AI-accessible through intelligent context management, retrieval-augmented generation, and hierarchical processing techniques.
+- [Why TeraContext.AI](https://teracontext.ai/#why-teracontextai): Part of the Joshua8.AI product line, combining deep LLM expertise with production-proven context management and industry-specific solutions.
+
+## Solutions
+
+- [Our Solutions](https://teracontext.ai/solutions): Advanced context management and fine-tuning techniques including RAG, GraphRAG, multi-layer summarization (RAPTOR), adaptive context assembly, and hybrid approaches for optimal results.
+- [RAG (Retrieval-Augmented Generation)](https://teracontext.ai/solutions#retrieval-augmented-generation-rag): Semantic chunking, multi-modal embeddings, hybrid search, and full citation trails for documents with distinct sections and compliance requirements.
+- [GraphRAG](https://teracontext.ai/solutions#graphrag): Knowledge graph-based context organization for documents with complex cross-references, capturing entities, relationships, and hierarchies with custom domain ontologies.
+- [Multi-Layer Summarization (RAPTOR)](https://teracontext.ai/solutions#multi-layer-summarization-raptor): Hierarchical document understanding with recursive abstractive processing for queries requiring broad contextual awareness.
+
+## Use Cases
+
+- [Use Cases Overview](https://teracontext.ai/use-cases): Real-world applications across legal, construction, systems engineering, and enterprise domains where document complexity exceeds standard AI capabilities.
+- [Legal & Regulatory](https://teracontext.ai/use-cases#legal--regulatory): M&A due diligence (5,000+ pages), regulatory compliance analysis, contract lifecycle management with clause extraction and risk identification.
+- [Commercial Construction](https://teracontext.ai/use-cases#commercial-construction): Multi-volume specifications navigation, RFI management, submittal tracking, and automated code compliance verification.
+- [Systems Engineering](https://teracontext.ai/use-cases#systems-engineering): Requirements traceability across aerospace/defense subsystems, interface conflict detection, and multi-stakeholder integration for 10,000+ page systems.
+- [Enterprise Documentation](https://teracontext.ai/use-cases#enterprise-documentation): Policy and SOP management, knowledge base synthesis, and institutional knowledge preservation.
+
+## Blog Posts
+
+- [Context Window Evolution: From 4K to 10M+ Tokens](https://teracontext.ai/blog/2025/10/01/context-window-evolution): Comprehensive analysis of how LLM context windows have evolved from GPT-3's 4K tokens to Gemini's 10M+ token windows, and why context management still matters.
+- [RAG vs. GraphRAG: When to Use Each Approach](https://teracontext.ai/blog/2025/10/05/rag-vs-graphrag): Detailed comparison of retrieval-augmented generation and graph-based retrieval, with decision frameworks for choosing the right approach for your use case.
+- [RAPTOR and Multi-Layer Summarization: Building Hierarchical Document Understanding](https://teracontext.ai/blog/2025/10/10/raptor-multi-layer-summarization): How recursive abstractive processing creates hierarchical document understanding for more effective AI interaction with complex documents.
+- [Mamba vs. Transformers for Long-Context Processing](https://teracontext.ai/blog/2025/10/14/mamba-vs-transformers-long-context): Technical comparison of Mamba's state space model architecture versus transformer-based approaches for efficient long-context processing.
+
+## Key Technologies
+
+- **RAG (Retrieval-Augmented Generation)**: Semantic chunking, multi-modal embeddings (text, tables, diagrams, PDFs), hybrid search combining semantic similarity with keyword precision
+- **GraphRAG**: LLM-powered entity/relationship extraction (95%+ accuracy), custom domain ontologies, efficient graph traversal for context assembly
+- **RAPTOR**: Recursive abstractive processing for tree-organized retrieval, hierarchical summarization from granular chunks to high-level themes
+- **Adaptive Context Assembly**: Dynamic context construction based on query patterns, multi-modal handling, real-time query optimization
+- **Hybrid Approaches**: Combining RAG + GraphRAG + summarization strategically based on document characteristics and use case requirements
+
+## Industries Served
+
+- **Legal & Regulatory**: Due diligence, compliance analysis, contract management, clause extraction, regulatory change tracking
+- **Commercial Construction**: Specifications management, RFI automation, code compliance, submittal tracking, change order management
+- **Systems Engineering**: Requirements traceability, interface conflict detection, subsystem integration, multi-stakeholder coordination
+- **Enterprise**: Policy management, knowledge base optimization, institutional knowledge preservation, decision support systems
+
+## Technical Expertise
+
+- Context window optimization and management techniques
+- Embedding models and semantic search
+- Knowledge graph construction and reasoning
+- Multi-modal document processing (text, tables, diagrams, legacy PDFs)
+- Citation tracking and audit trail systems
+- Integration with existing enterprise workflows
+- Fine-tuning for domain-specific applications
+- Evaluation metrics for retrieval quality
+
+## Parent Organization
+
+TeraContext.AI is part of [Joshua8.AI](https://joshua8.ai), a strategic AI consulting firm helping businesses avoid the 95% AI failure rate through customized implementations.
+
+## Contact
+
+- [Contact Us](https://teracontext.ai/contact): info@teracontext.ai | McLean, VA | Free consultation for complex document processing needs
